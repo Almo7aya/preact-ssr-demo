@@ -1,0 +1,7 @@
+{
+  "name": "preact-ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ali Almohaya <AliAlmohaya@gmail.com>",
+  "license": "MIT"
+}
