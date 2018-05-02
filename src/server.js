@@ -3,16 +3,15 @@ const express = require("express");
 const { h } = require("preact");
 const render = require("preact-render-to-string");
 import { Provider } from 'unistore/preact'
-const { App } = require("./src/App");
+const { App } = require("./App");
 const path = require("path");
 
-import Router from './src/router'
-import createStore from './src/store/store'
+import Router from './router'
+import createStore from './store/store'
 
 const app = express();
 
 const HTMLShell = (html, state) => `
-    <!DOCTYPE html>
     <html>
         <head>
             <meta charset="utf-8">
@@ -40,7 +39,8 @@ app.get('**', (req, res) => {
         </Provider>
     )
 
-    res.send(HTMLShell(html, state))
+    res.writeHead(200 ,{'Content-Type': 'text/html'});
+    res.end(HTMLShell(html, state));
 })
 
 app.listen(4000);
