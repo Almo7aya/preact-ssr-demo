@@ -3,5 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Ali Almohaya <AliAlmohaya@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "file-loader": "^1.1.11",
+    "preact": "^8.2.9",
+    "preact-render-to-string": "^3.7.0",
+    "preact-router": "^2.6.0",
+    "unistore": "^3.0.4",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
